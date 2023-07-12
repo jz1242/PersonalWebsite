@@ -1,8 +1,7 @@
-# For FASTAPI
 from fastapi import FastAPI
 
 app = FastAPI()
 
 @app.get("/")
-def home():
-    return {"Hello": "World"}
+def root():
+    return "Hello World"
